@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 30px 0px;
-    width: 500px;
+    width: 1000px;
     /* height: 50px; */
     justify-content: space-around;
     border-radius: 10%;
@@ -22,6 +22,7 @@
     gap: 100px;
     /* margin-left: 200px; */
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 900px;
 
 }
 
@@ -31,25 +32,32 @@
    
 }
 
-h3{
-    margin-top: 80px;
-    width: 300px;
+.Prod_name{
+    padding-top: 80px;
 }
 
-p{
-    margin-top: 80px;
+cartcard h3{
+    
+    width: 300px;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+.cartcard p{
+    margin-top: 100px;
     width: 120px;
     font-weight:bold;
 
 }
 
-button{
+.cartcard button{
     border-radius: 10%;
     background-color: #e6434b;
     color: #FFFFFF;
     width: 100px;
     margin-top: 100px;
     margin-bottom: 100px;
+    
     text-align: center;
     font-size: 100%;
     cursor: pointer;
@@ -58,4 +66,10 @@ button{
 
 .cartCard button:hover{
     background-color: #660409;
+  }
+
+  .total{
+   
+    width: 900px;
+    text-align: end;
   }

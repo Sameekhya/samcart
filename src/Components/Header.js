@@ -3,7 +3,10 @@ import Logo from '../Assets/Logo.jpg'
 import cart from '../Assets/cart.jpg'
 import { NavLink, Link } from "react-router-dom";
 import "../App.css";
+import { useCart } from '../context/CartContext';
 const Header = () => {
+
+  const {cartList} = useCart();
   return (
     <header>
    <div className='logo'>
@@ -14,11 +17,16 @@ const Header = () => {
     </div>
    
     <nav className='navigation mb-10'>
-    <NavLink to="/cart" className="Navlink">
-      <img  style={{width :"30px"}}src={cart} alt="" />
-    </NavLink>
-    
+    <NavLink to="/" className="link" end>Home</NavLink>
+    <NavLink to="/cart" className="link">
+      Cart
+    </NavLink> 
      </nav>
+
+     <Link to="/cart" className="items">
+     <span>{cartList.length}</span>
+     <img   src={cart} alt="" />
+     </Link>
    
     </header>
     
